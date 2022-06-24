@@ -12,7 +12,7 @@ let pcscore = Math.floor(Math.random() * 6) + 1;
 
 if (umanscore > pcscore) {
     console.log('Ha vinto il giocatore!');
-} else if (umanscore = pcscore) {
+} else if (umanscore == pcscore) {
     console.log ('Pareggio!');
 } else {
     console.log('Ha vinto il computer!');
