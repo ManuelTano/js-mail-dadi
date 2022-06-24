@@ -12,14 +12,18 @@ let email = ["manueltano98@gmail.com", "t.manuel98@live.it", "lellykelly@alice.i
 
 let userEmail = prompt("Inserisci la tua email");
 
+let result = document.getElementById('risultato')
+
 // Controllo che essa sia nella lista di chi può accedere
 
 for (i = 0; i < email.length; i++) {
 
     if (email[i] === userEmail) {
-        console.log('Benvenuto');
+        console.log ('Benvenuto');
+        result.innerHTML = 'Benvenuto';
     } else if (email[i] !== userEmail)  {
         console.log ('Spiacenti');
+        result.innerHTML = 'Spiacenti';
     }
 }
 
