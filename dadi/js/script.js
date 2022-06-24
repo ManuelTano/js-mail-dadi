@@ -8,13 +8,19 @@
 let umanscore = Math.floor(Math.random() * 6) + 1;
 let pcscore = Math.floor(Math.random() * 6) + 1;
 
+let result = document.getElementById('risultato')
+
+
 // Stabilisco il vincitore
 
 if (umanscore > pcscore) {
     console.log('Ha vinto il giocatore!');
+    result.innerHTML = 'Ha vinto il giocatore!';
 } else if (umanscore == pcscore) {
     console.log ('Pareggio!');
+    result.innerHTML = 'Pareggio';
 } else {
     console.log('Ha vinto il computer!');
+    result.innerHTML = 'Ha vinto il computer!';
 }
 
