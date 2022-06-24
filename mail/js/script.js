@@ -14,7 +14,7 @@ let userEmail = prompt("Inserisci la tua email");
 
 // Controllo che essa sia nella lista di chi può accedere
 
-for (i = 0; i = email.length; i++) {
+for (i = 0; i < email.length; i++) {
 
     if (email[i] === userEmail) {
         console.log('Benvenuto');
