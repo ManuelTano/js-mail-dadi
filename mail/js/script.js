@@ -6,24 +6,25 @@
 
 // Creo una lista di indirizzi email autorizzati
 
+let lista = document.getElementById('risultato')
+
 let email = ["manueltano98@gmail.com", "t.manuel98@live.it", "lellykelly@alice.it", "sium@gmail.com"];
 
 // Chiedo all'utente la sua email
 
 let userEmail = prompt("Inserisci la tua email");
 
-let result = document.getElementById('risultato')
+let access = 'Spiacenti';
 
 // Controllo che essa sia nella lista di chi può accedere
 
 for (i = 0; i < email.length; i++) {
 
-    if (email[i] === userEmail) {
+    if (userEmail === email[i]) {
+        access = "Benvenuto";
         console.log ('Benvenuto');
-        result.innerHTML = 'Benvenuto';
-    } else if (email[i] !== userEmail)  {
-        console.log ('Spiacenti');
-        result.innerHTML = 'Spiacenti';
-    }
-}
+    } 
+};
+
+lista.innerHTML = access;
 
